@@ -12,12 +12,14 @@
             <li><a href="../">Programming</a></li>
             <li><a href="../algoritma/">Algoritma</a></li>
             <li><a href="#">Profile</a></li>
+            <li style="float: right"><a href="#contact">Contact</a></li>
+            <li style="float: right"><a href="#response">Response</a></li>
         </ul>
 
         <img class="profile-picture" src="../assets/img/profile-self2.jpg">
 
         <div class="header-profile">
-            <h1>
+            <h1 id="contact">
                 <span style="background-color: #8758FF; padding: 0 65px 0 65px;">About me</span>
             </h1>
 
@@ -41,6 +43,28 @@
             </div>
 
         </div>
+
+        <div class="container">
+            <h1 id="response">
+                <span style="background-color: #8758FF; padding: 0 65px 0 65px;">Response</span>
+            </h1>
+            <form action="../response/" method="post">
+          
+              <label for="name"><p style="color: #F2F2F2; margin-left: 25%;">Nama</p></label>
+              <input type="text" id="fname" name="nama" placeholder="Masukan nama anda..." required>
+          
+              <label for="email"><p style="color: #F2F2F2; margin-left: 25%;">Email</p></label>
+              <input type="text" id="email" name="email" placeholder="Masukan email anda..." required>
+          
+              <label for="pesan"><p style="color: #F2F2F2; margin-left: 25%;">Pesan</p></label>
+              <textarea required id="pesan" name="pesan" placeholder="Tulis pesan yang akan disampaikan..." style="height:200px"></textarea>
+                
+              <br>
+
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
 
     </body>
 </html>

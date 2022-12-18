@@ -11,70 +11,87 @@
             <li><a href="#">Programming</a></li>
             <li><a href="algoritma/">Algoritma</a></li>
             <li><a href="profile/">Profile</a></li>
-            <li style="float: right;"><a href="#sub-bab">Sub-Bab</a></li>
         </ul>
 
-        <h1><i>Programming</i></h1>
-        <img src="assets/img/altur-pos.jpg" alt="Penemu mesing pemograman">
+        <h1 style="margin-bottom: 100px;"><i>Programming</i></h1>
+        <img src="assets/img/altur-pos.jpg" alt="Penemu mesin pemrograman">
         <br><br>
         <p class="quote"><q>Those who can imagine anything, can create the impossible.</q></p>
         <p style="text-align: right;" class="quote">~ Alan Mathison Turing</p>
 
         <hr>
 
-        <blockquote>
-            Halo semuanya, seperti yang kita lihat dibagian atas beliau adalah seorang Ilmuwan Matematika yang berhasil memecahkan pesan rahasia dari Jerman saat Perang Dunia II. Ia beserta tim nya bekerja sama membuat suatu mesin yang mampu menerjemahkan alat penyandi bernama Enigma dengan komputasi yang akurat. <br><br>
-            Nah pada website ini juga sama akan menjelaskan tentang programming yang dimana berelasi penuh dengan Alan Turing dan tim nya yang mereka lakukan.
-        </blockquote>
+        <h2 id="pengertian-programming" style="text-align: center; margin-top: 100px; margin-bottom: 50px;">Apa Itu Programming?</h2>
+        <img class="img-pengertian" src="assets/img/img-whatis-one.png" alt="Pengertian Programming">
 
-        <h3 class="subhead" id="sub-bab">Pilih Sub-bab yang ingin dilihat</h3>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <div class="overlay-content">
+                <p class="para-pengertian">Program merupakan suatu urutan logika dengan input dan output tertentu. Program juga dapat berupa kumpulan perintah agar komputer dapat berfungsi secara optimal sesuai dengan kemauan. Program yang disatukan dengan sistem disebut aplikasi, seperti aplikasi web, maupun android. <br><br>Kamu masih bertanya-tanya kan, apa itu programming? Simpel saja, programming adalah sebuah proses untuk membuat program di komputer. Program yang dibuat bisa berupa software, website, aplikasi android, dsb. <br><br>Lalu, mulai dari manakah agar kamu bisa memulai programming? Untuk membuat program tentunya ada beberapa tahapan. Mulai dari tulis menulis, menguji, merevisi, dan mengevaluasi, serta mengujinya lagi sampai program tersebut benar-benar jadi dan sesuai dengan apa yang diinginkan. <br><br><em> Jadi, programming adalah suatu proses atau kegiatan menulis dan menguji (pemrograman) agar program dapat dibuat, dan hasilnya sesuai apa yang diinginkan.</em> </p>
+            </div>
+        </div>
 
-        <a href="#pengertian-programming"><img style="float: left; padding-left: 220px; width: 25%;" src="assets/img/whatis-actual.png" title="Apa itu programming?" alt="Sample case of Programming"></a>
-
-        <a href="#jenis-pemograman"><img style="float: right; padding-right: 220px; width: 25%; " src="assets/img/definition-actual.png" title="Jenis-jenis dari pemograman" alt="Sample case of Programming"></a>
+        <button id="button-pengertian" onclick="openNav()">Pengertian Pemrograman</button>
+        <script>
+            function openNav() {
+              document.getElementById("myNav").style.width = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
 
         <hr>
 
-        <h2 id="pengertian-programming" style="text-align: center; padding-top: 150px;">Apa Itu Programming?</h2>
-
-        <img class="img-pengertian" src="assets/img/img-whatis-one.png" alt="Pengertian Programming">
-
-        <p class="para-pengertian">Program merupakan suatu urutan logika dengan input dan output tertentu. Program juga dapat berupa kumpulan perintah agar komputer dapat berfungsi secara optimal sesuai dengan kemauan. Program yang disatukan dengan sistem disebut aplikasi, seperti aplikasi web, maupun android. <br><br>Kamu masih bertanya-tanya kan, apa itu programming? Simpel saja, programming adalah sebuah proses untuk membuat program di komputer. Program yang dibuat bisa berupa software, website, aplikasi android, dsb. <br><br>Lalu, mulai dari manakah agar kamu bisa memulai programming? Untuk membuat program tentunya ada beberapa tahapan. Mulai dari tulis menulis, menguji, merevisi, dan mengevaluasi, serta mengujinya lagi sampai program tersebut benar-benar jadi dan sesuai dengan apa yang diinginkan. <br><br><em> Jadi, programming adalah suatu proses atau kegiatan menulis dan menguji (pemrograman) agar program dapat dibuat, dan hasilnya sesuai apa yang diinginkan.</em> </p>
-
         <h2 id="jenis-pemograman" style="text-align: center; padding-top: 80px; padding-bottom: 30px;">Jenis-Jenis Pemrograman</h2>
 
-        <p class="para-jenis">Setelah memahami tentang pengertian pemrograman, maka Anda juga harus memahami apa saja jenis pemrograman yang digunakan untuk menyusun sebuah sistem komputer. <br><br>Pada prakteknya, ada banyak sekali jenis pemrograman komputer. Setiap jenis pemrograman digolongkan berdasarkan fungsi dan kegunaannya masing-masing. Memahami apa saja jenis-jenis pemrograman komputer di dunia nyata akan memberikan Anda gambaran langsung terkait pekerjaan umum seorang programmer. Sehingga, Anda pun bisa lebih mempersiapkan diri dengan baik. <br><br></p>
+        <div class="tab">
+            <button style="font-size: larger;" class="tablinks" onmouseover="openDescription(event, 'web')"><b>Pemrograman Web</b></button>
+            <button style="font-size: larger;" class="tablinks" onmouseover="openDescription(event, 'aplikasi')"><b>Pemrograman Aplikasi</b></button>
+            <button style="font-size: larger;" class="tablinks" onmouseover="openDescription(event, 'os')"><b>Pemrograman Sistem Operasi</b></button>
+            <button style="font-size: larger;" class="tablinks" onmouseover="openDescription(event, 'game')"><b>Pemrograman Game</b></button>
+        </div>
+          
+        <div id="web" class="tabcontent">
+            <img src="assets/img/ngoding-web.jpg" class="img-center">
+            <p id="p-tab-content">Sesuai namanya, fungsi utama dari jenis pemrograman ini adalah untuk menyusun sebuah fungsional sebuah website agar menjadi lebih mudah digunakan. Tentunya semua orang sudah pernah membuka website, bukan? Dari sekian jenis website yang pernah Anda buka dan kunjungi, tentunya Anda akan menyadari bahwa setiap website memiliki tampilan yang berbeda-beda.</p>
+        </div>
+          
+        <div id="aplikasi" class="tabcontent">
+            <img src="assets/img/ngoding-app.png" class="img-center">
+            <p id="p-tab-content">Jenis pemrograman aplikasi ini akan lebih berfokus pada hasil untuk menyusun sebuah aplikasi. Para developer yang bekerja di bidang pengembangan aplikasi akan selalu berorientasi pada sistem terbaik yang bisa digunakan untuk menciptakan aplikasi dengan daya kegunaan tinggi. Sehingga, produk ciptaan mereka bisa mengatasi beragam pekerjaan ataupun masalah lainnya.</p>
+        </div>
+          
+        <div id="os" class="tabcontent">
+            <img src="assets/img/ngoding-os.png" class="img-center">
+            <p id="p-tab-content">Jenis pemrograman yang satu ini bisa dikatakan sebagai komponen yang penting karena digunakan sebagai jenis pemrograman yang membentuk sebuah perangkat komputer. Sistem operasi harus di-instalasi terlebih dahulu pada sebuah perangkat komputer untuk bisa berfungsi dengan baik. Jika tidak ada sistem operasi, maka seluruh perangkat tidak bisa memiliki fungsi apapun.</p>
+        </div>
 
-        <h3 class="header-list">1. Pemrograman Web</h3>
-        <img src="assets/img/ngoding-web.jpg" class="img-center">
-        <p class="content-programming">Sesuai namanya, fungsi utama dari jenis pemrograman ini adalah untuk menyusun sebuah fungsional sebuah website agar menjadi lebih mudah digunakan. Tentunya semua orang sudah pernah membuka website, bukan? Dari sekian jenis website yang pernah Anda buka dan kunjungi, tentunya Anda akan menyadari bahwa setiap website memiliki tampilan yang berbeda-beda. <br> <br>
+        <div id="game" class="tabcontent">
+            <img src="assets/img/ngoding-game.jpg" class="img-center">
+            <p id="p-tab-content">Bisa dikatakan, tipe pemrograman ini merupakan jenis pemrograman yang paling sulit. Ini disebabkan kita harus menggabungkan antara desain visual dan juga sintaks untuk menjalankan algoritmanya. Sebuah game harus memiliki alur cerita yang jelas serta menarik terkait bagaimana proses permainan, apa saja karakter yang terlibat, dan apa saja jenis tantangan yang diberikan untuk diselesaikan pemain.</p>
+        </div>
 
-        Anda juga mungkin menyadari bahwa terdapat beberapa website yang nampak lebih bagus, lebih kompleks, serta ada juga yang terlihat sederhana dan lebih simpel. Perbedaan ini tentunya dikarenakan oleh perbedaan jenis pemrograman yang menyusun website tersebut. <br> <br>
-        
-        Dengan menggunakan mekanisme pemrograman, maka sebuah website bisa berjalan dengan lebih interaktif, dinamis dan memiliki daya fungsional yang lebih tinggi. Optimalisasi website melalui bahasa pemrograman tentunya akan sangat berpengaruh pada sistem pemberian informasi ke pengguna.</p>
-        
-        <h3 class="header-list">2. Pemrograman Aplikasi</h3>
-        <img src="assets/img/ngoding-app.png" class="img-center">
-        <p class="content-programming" style="padding-top: 255px;">Jenis pemrograman aplikasi ini akan lebih berfokus pada hasil untuk menyusun sebuah aplikasi. Para developer yang bekerja di bidang pengembangan aplikasi akan selalu berorientasi pada sistem terbaik yang bisa digunakan untuk menciptakan aplikasi dengan daya kegunaan tinggi. Sehingga, produk ciptaan mereka bisa mengatasi beragam pekerjaan ataupun masalah lainnya. <br> <br>
+        <script>
+            function openDescription(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
 
-        Oleh sebab itu, pemrograman aplikasi ini berfokus pada satu tujuan saja. Misalnya aplikasi Microsoft Office yang berfokus pada pengolahan data. <br><br>
-        
-        Microsoft Office hanya akan dioperasikan untuk masalah pengolahan data saja, seperti Microsoft Excel untuk mengolah data-data angka, sedangkan Microsoft Word untuk mengolah data tulisan dan gambar. Di luar kebutuhan pengolahan data seperti ini, maka Anda harus mencari dan menggunakan aplikasi khusus lain.</p>
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
 
-        <h3 class="header-list">3. Pemrograman Sistem Operasi</h3>
-        <img src="assets/img/ngoding-os.png" class="img-center">
-        <p class="content-programming" style="padding-top: 255px;">Jenis pemrograman yang satu ini bisa dikatakan sebagai komponen yang penting karena digunakan sebagai jenis pemrograman yang membentuk sebuah perangkat komputer. Sistem operasi harus di-instalasi terlebih dahulu pada sebuah perangkat komputer untuk bisa berfungsi dengan baik. Jika tidak ada sistem operasi, maka seluruh perangkat tidak bisa memiliki fungsi apapun. <br> <br>
+                tablinks = document.getElementsByClassName("tablinks");
+  
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
 
-        Sistem operasi ini tidak perlu lagi untuk Anda utak-atik sendiri, sebab sudah menjadi satu dalam setiap perangkat hardware yang Anda beli, baik itu laptop, komputer ataupun smartphone dan tablet. <br> <br>
-        
-        Contoh sistem operasi yang ada di masyarakat adalah: Windows, Linux, Android, iOS, dan seterusnya. Untuk level komputer dan PC, sistem operator yang populer adalah Windows, karena ada lebih banyak jenis komputer dan PC yang menggunakan sistem operasi bawaan Windows.</p>
-
-        <h3 class="header-list">4. Pemrograman Game</h3>
-        <img src="assets/img/ngoding-game.jpg" class="img-center">
-        <p class="content-programming" style="padding-top: 325px;">Bisa dikatakan, tipe pemrograman ini merupakan jenis pemrograman yang paling sulit. Ini disebabkan kita harus menggabungkan antara desain visual dan juga sintaks untuk menjalankan algoritmanya. <br> <br>
-
-        Sebuah game harus memiliki alur cerita yang jelas serta menarik terkait bagaimana proses permainan, apa saja karakter yang terlibat, dan apa saja jenis tantangan yang diberikan untuk diselesaikan pemain. <br> <br>
-        
-        Jadi, ketiga aspek tersebut harus direncanakan dengan baik dan matang agar Anda bisa membuat sendiri sebuah game yang bisa disukai oleh masyarakat luas. Bahasa pemrograman untuk menyusun game terdiri dari Java, C dan juga C++. Bahasa-bahasa ini cukup kompleks untuk dipelajari, sehingga Anda harus memfokuskan diri untuk melakukan observasi langsung dengan menciptakan sebuah game.</p>
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
     </body>
 </html>
